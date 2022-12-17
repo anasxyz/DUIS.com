@@ -30,7 +30,3 @@ h1, h2, p, label {
 .underlined {
     border-bottom: 3px solid #FAFAFF;
 }
-
-.allButFooter {
-    min-height: calc(100vh - 40px);
-}
