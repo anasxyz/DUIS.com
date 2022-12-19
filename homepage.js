@@ -13,7 +13,7 @@ function displayText() {
 
         p.classList.add("p-3");
         div.classList.add("text-center");
-        div.classList.add("bg-dark");
+        div.classList.add("accent");
         div.classList.add("rounded");
 
         output.appendChild(div);
@@ -21,4 +21,21 @@ function displayText() {
 
         input.value = "";
     }
+}
+
+function switchBtn() {
+    let btn = document.getElementById("switchBtn");
+
+    if (btn.classList.contains("btn-success")) {
+        btn.classList.remove("btn-success");
+        btn.classList.add("btn-danger");
+    }
+    else if (btn.classList.contains("btn-danger")) {
+        btn.classList.remove("btn-danger");
+        btn.classList.add("btn-success");
+    }
+}
+
+function test1() {
+    
 }
