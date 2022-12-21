@@ -23,8 +23,10 @@ function displayText() {
     }
 }
 
-function switchBtn() {
-    let btn = document.getElementById("switchBtn");
+function onBtn() {
+    let Onbtn = document.getElementById("onBtn");
+
+    /* CONTINUE LATER*/
 
     if (btn.classList.contains("btn-success")) {
         btn.classList.remove("btn-success");
@@ -36,6 +38,6 @@ function switchBtn() {
     }
 }
 
-function test1() {
-    
+function offbtn() {
+
 }
