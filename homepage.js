@@ -11,6 +11,7 @@ function displayText() {
 
     newDiv.classList.add("accent");
     newDiv.classList.add("rounded");
+    newDiv.classList.add("mt-3");
     newDiv.classList.add("animate__animated");
     newDiv.classList.add("animate__fadeInDown");
 
@@ -21,7 +22,8 @@ function displayText() {
     newBtn.innerHTML = "Delete";
     newBtn.setAttribute("onclick", "");
 
-    outputDiv.appendChild()
+    outputDiv.appendChild(newDiv);
+    newDiv.appendChild(newText);
 
     //reset inputbox
     inputBox.value = "";
