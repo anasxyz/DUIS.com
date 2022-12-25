@@ -39,3 +39,7 @@ h1, h2, p, label, .btn {
 }
 
 /* CSS for other stuff */
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 0.3s;
+}

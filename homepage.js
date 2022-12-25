@@ -1,43 +1,28 @@
 function displayText() {
-    let input = document.getElementById("input");
-    let output = document.getElementById("output");
+    let inputBox = document.getElementById("input");
+    let outputDiv = document.getElementById("output");
 
-    const p = document.createElement("p");
-    const div = document.createElement("div");
+    const newDiv = document.createElement("div");
+    const newText = document.createElement("p");
+    const newBtn = document.createElement("button");
 
-    if (input.value.length < 1) {
-        alert("Text box is empty!");
-    }
-    else {
-        p.textContent = input.value;
+    newText.textContent = input.value;
+    newText.classList.add("p-3");
 
-        p.classList.add("p-3");
-        div.classList.add("text-center");
-        div.classList.add("accent");
-        div.classList.add("rounded");
+    newDiv.classList.add("accent");
+    newDiv.classList.add("rounded");
+    newDiv.classList.add("animate__animated");
+    newDiv.classList.add("animate__fadeInDown");
 
-        output.appendChild(div);
-        div.appendChild(p);
+    newBtn.setAttribute("type", "button");
+    newBtn.classList.add("btn");
+    newBtn.classList.add("btn-secondary");
+    newBtn.classList.add("float-right");
+    newBtn.innerHTML = "Delete";
+    newBtn.setAttribute("onclick", "");
 
-        input.value = "";
-    }
-}
+    outputDiv.appendChild()
 
-function onBtn() {
-    let Onbtn = document.getElementById("onBtn");
-
-    /* CONTINUE LATER*/
-
-    if (btn.classList.contains("btn-success")) {
-        btn.classList.remove("btn-success");
-        btn.classList.add("btn-danger");
-    }
-    else if (btn.classList.contains("btn-danger")) {
-        btn.classList.remove("btn-danger");
-        btn.classList.add("btn-success");
-    }
-}
-
-function offbtn() {
-
+    //reset inputbox
+    inputBox.value = "";
 }
