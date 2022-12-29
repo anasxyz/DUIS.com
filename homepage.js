@@ -19,7 +19,8 @@ function displayText() {
     div1.classList.add("animate__animated");
     div1.classList.add("animate__fadeInDown");
     childrenCount = outputDiv.childElementCount;
-    div1.setAttribute("id", "textDiv" + (childrenCount + 1));
+    
+    rowDiv.setAttribute("id", "textDiv" + (childrenCount + 1));
 
     dltBtn1.setAttribute("type", "button");
     dltBtn1.classList.add("btn");
