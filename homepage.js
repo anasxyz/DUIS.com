@@ -2,6 +2,7 @@ let inputBox = document.getElementById("input");
 let outputDiv = document.getElementById("output");
 
 function displayText() {
+    const rowDiv = document.createElement("div");
     const div1 = document.createElement("div");
     const text1 = document.createElement("p");
     const dltBtn1 = document.createElement("button");
@@ -9,6 +10,9 @@ function displayText() {
     text1.textContent = input.value;
     text1.classList.add("p-3");
 
+    rowDiv.classList.add("row");
+    
+    div1.classList.add("col-12");
     div1.classList.add("accent");
     div1.classList.add("rounded");
     div1.classList.add("mt-3");
@@ -21,12 +25,13 @@ function displayText() {
     dltBtn1.classList.add("btn");
     dltBtn1.classList.add("btn-secondary");
     dltBtn1.classList.add("float-right");
-    dltBtn1.innerHTML = "Delete";
+    dltBtn1.innerHTML = "🗑️";
     dltBtn1.setAttribute("onclick", "deleteText(this, " + (childrenCount + 1) + ")");
 
     text1.appendChild(dltBtn1);
     div1.appendChild(text1);
-    outputDiv.appendChild(div1);
+    rowDiv.appendChild(div1);
+    outputDiv.appendChild(rowDiv);
 
     //reset inputbox
     inputBox.value = "";
